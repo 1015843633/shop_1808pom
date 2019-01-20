@@ -1,0 +1,12 @@
+server:
+  port: 8083
+#配置tomcat中的solr工程里面的地址
+spring:
+  data:
+    solr:
+      host: http://192.168.154.199:8080/solr
+dubbo:
+  application:
+    name: search
+  registry:
+    address: zookeeper://192.168.154.199:2181
