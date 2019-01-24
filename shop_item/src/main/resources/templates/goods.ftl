@@ -607,11 +607,23 @@
                 </li>
                 <li style="padding:20px 0;">
                     <label>&nbsp;</label>
-                    <span><a href="" class="goods_sub goods_sub_gou" >加入购物车</a></span>
+                    <span><a href="javascript:addcart();" class="goods_sub goods_sub_gou" >加入购物车</a></span>
                 </li>
             </ul>
         </div>
     </div>
+    <script>
+        function addcart() {
+            alert("你好");
+            //获取商品Id
+            var gid=${goods.id};
+            //获取商品数量
+            var gnumber=$("#good_nums").val();
+            //跳转到购物车工程
+
+            location.href="http://localhost:8088/cart/add?gid=" + gid + "&gnumber=" + gnumber;
+        }
+    </script>
     <!-- 商品展示 End -->
 
     <div class="clear mt15"></div>

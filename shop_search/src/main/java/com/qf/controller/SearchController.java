@@ -2,7 +2,7 @@ package com.qf.controller;
 
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.qf.entity.Goods;
-import com.qf.service.ISearchService;
+import com.qf.serviceimpl.ISearchService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;

@@ -8,7 +8,8 @@
 		<module>shop_service_api</module>
         <module>java_rubbitmq_test</module>
 		<module>rubbitmq_test</module>
-	</modules>
+        <module>shop_commons</module>
+    </modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>

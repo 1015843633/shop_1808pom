@@ -2,7 +2,6 @@ package com.qf.serviceimpl;
 
 import com.alibaba.dubbo.config.annotation.Service;
 import com.qf.entity.Goods;
-import com.qf.service.ISearchService;
 import org.apache.solr.client.solrj.SolrClient;
 import org.apache.solr.client.solrj.SolrQuery;
 import org.apache.solr.client.solrj.response.QueryResponse;
@@ -29,6 +28,7 @@ public class SearchServiceImpl implements ISearchService{
         /**
          * 查询索引库
          */
+        //创建一个查询实例
         SolrQuery solrQuery=new SolrQuery();
         if(keyword==null ){
             System.out.println("等于空");
