@@ -1,0 +1,18 @@
+server:
+  port: 8086
+dubbo:
+  application:
+    name: shop_sso
+    qos-enable: true
+    qos-port: 33333
+    qos-accept-foreign-ip: false
+  registry:
+    address: zookeeper://192.168.154.199:2181
+    port: -1
+  consumer:
+    check: false
+spring:
+  redis:
+    host: 192.168.154.199
+  thymeleaf:
+    cache: false
